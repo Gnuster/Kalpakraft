@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>KalpaKraft</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+    <body>
+    <div class="header_color">
+        <div class="header">
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="navi" data-spy="affix" data-offset-top="230">
+        <div class="nav-all">
+            <div class="col-xs-5">
+                <div class="nav-content">
+                    <a href="index.html">HOME</a>
+                </div>
+                <div class="nav-devider">/</div>
+                <div class="nav-content">
+                    <a href="">VOTE</a>
+                </div>
+                <div class="nav-devider">/</div>
+                <div class="nav-content">
+                    <a href="forum.html">FORUM</a>
+                </div>
+                <div class="nav-devider">/</div>
+                <div class="nav-content">
+                    <a href="">SHOP</a>
+                </div>
+            </div>
+            <div class="col-xs-2" style="margin:0 auto;">
+                <div class="server-ip">
+                    <input onclick="this.select()" data-animation="true" data-toggle="tooltip" data-placement="right" title="Click here and press Ctrl+C to copy." type="text" value="play.kalpakraft.com" readonly="">
+                </div>
+            </div>
+            <div class="col-xs-5">
+                <div class="profile-icon pulse">
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container" data-spy="affix" data-offset-top="230">
+        <div class="content">
+            <!-- .login-wrapper must have height size as .login -->
+            <div class="login-wrapper">
+            <div class="login"  data-spy="affix" data-offset-top="230">
+                <div class="login-line"></div>
+                <form>
+                <input type="text" placeholder="Username" required="">
+                <input type="password" placeholder="Password" required="">
+                <div class="check-bg">
+                    <div class="check">
+                        <label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Remember Me</label>
+                    </div>
+                    <a href="#">
+                        <div class="user">
+                            Login
+                        </div>
+                    </a>
+                    <div class="register-line"></div>
+                    <div class="register-content">
+                        <span class="forgot-pass">
+                            <a href="#">Forgot Password?</a>
+                        </span>
+                        <span style="color:white">/</span>
+                        <span class="register">
+                            <a href="#">Register</a>
+                        </span>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                </form>
+            </div>
+            </div>
+            <!-- LEFT -->
+            <div class="col-xs-3">
+                <div class="section-title">
+                    Section title
+                </div>
+                <div class="section-content">
+                    <div style="height:200px;">
+                        content goes here
+                    </div>
+                </div>
+                <div class="section-title">
+                    Section title
+                </div>
+                <div class="section-content">
+                    <div style="height:250px;">
+                        content goes here
+                    </div>
+                </div>
+            </div>
+            <!-- CENTER -->
+            <div class="col-xs-6">
+                <div class="section-title">
+                    Section title
+                </div>
+                <div class="section-content">
+                    <div style="height:400px;">
+                        content goes here
+                    </div>
+                </div>
+            </div>
+            <!-- RIGHT -->
+            <div class="col-xs-3">
+                <div class="section-title">
+                    Section title
+                </div>
+                <div class="section-content">
+                    <div style="height:200px;">
+                        content goes here
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+        </script>
+        <script>
+        $( ".profile-icon" ).click(function() {
+          $( ".login" ).stop().slideToggle( "slow" );
+          $(".profile-icon").toggleClass("pulse");
+        });
+        </script>
+    </body>
+</html>

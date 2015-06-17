@@ -1,0 +1,114 @@
+body{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px
+    background-color: #CFCFCF;
+
+}
+nav{
+    background-color: #433C3C;
+    height:40px;
+}
+nav.affix {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    width: 100%;
+    z-index:2;
+}
+.nav-devider{
+    color:white;
+    display: inline;
+}
+.container{
+    width:1120px;
+    position: relative;
+    background-color: #CFCFCF;
+}
+.container.affix{
+    top:40px;
+}
+.header{
+    /*must have a header picture*/
+    background-image: url("http://www.placehold.it/1120x200");
+    width: 1120px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.header-content{
+    width: 100%;
+}
+.content{
+    height:2000px;
+}
+.section-title{
+    font-size: 25px;
+    text-align: center;
+}
+.col-md-3,
+.col-md-9{
+    padding-left:5px;
+    padding-right:5px;
+    padding-top:15px;
+}
+.section-content{
+    word-wrap: break-word;
+    border-radius: 4px;
+    border: 1px solid #719897;
+    margin-bottom:30px;
+    background-color:#FEFFE6
+}
+.nav-content{
+    display: inline;
+    text-decoration:none;
+
+
+}
+
+.nav-content a{
+    color:#01DCB0;
+    transition:.5s;
+    border-color: #FFA759;
+    text-decoration:none;
+}
+.nav-content a:hover{
+    text-decoration:none;
+    color:#BEF4F2;
+    border-bottom: solid 2px #FFA759;
+}
+
+.nav-all{
+    width: 1020px;
+    margin:0 auto;
+    font-size: 28px
+}
+.server-ip{
+    display: inline;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.tooltip.right .tooltip-inner {
+    background-color:#BEF4F2;
+    color:#00A987;
+    min-width: 100px;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #BEF4F2;
+}
+input {
+    color: white;
+    background: none;
+    border: none;
+    width: 130px;
+    font-size: 20px;
+    text-transform: inherit;
+    border-spacing: 0;
+    cursor: pointer;
+
+}
+input::selection {
+  background: #71FEEC; /* WebKit/Blink Browsers */
+}
+input::-moz-selection {
+  background: #71FEEC; /* Gecko Browsers */
+}
